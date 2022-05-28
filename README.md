@@ -27,5 +27,3 @@ About Me.
 #### Firebase Authentication
 #### React
 #### react query
-
-a
