@@ -30,9 +30,7 @@ const Navbar = () => {
                 :
                 <Link to='/login'>Login</Link>
         }</li>
-
     </>
-
     return (
         <div dashboard-sidebar className="navbar bg-indigo-900 text-white lg:px-20 " >
             < div dashboard-sidebar className="navbar-start" >
