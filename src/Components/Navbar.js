@@ -56,7 +56,7 @@ const Navbar = () => {
                 </label>
             </div >
 
-            asdasdasdasda
+            asdasdasd
         </div >
     );
 };
