@@ -7,7 +7,7 @@ const DeleteConfirmModal = ({ deletingProduct, refetch, setDeletingProduct }) =>
 
     const handleRemove = (id) => {
 
-        const url = `http://localhost:5000/part/${id}`
+        const url = `https://whispering-ocean-06351.herokuapp.com/part/${id}`
         fetch(url, {
             method: 'DELETE'
         })

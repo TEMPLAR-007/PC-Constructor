@@ -7,7 +7,7 @@ const ManageAllOrder = () => {
 
     const [deletingProduct, setDeletingProduct] = useState(null);
 
-    const { data: orders, isLoading, refetch } = useQuery('orders', () => fetch('http://localhost:5000/order').then(res => res.json()));
+    const { data: orders, isLoading, refetch } = useQuery('orders', () => fetch('https://whispering-ocean-06351.herokuapp.com/order').then(res => res.json()));
 
     if (isLoading) {
         return <div dashboard-sidebar className='h-screen flex justify-center items-center' >

@@ -2,7 +2,7 @@
 
 ## Live Link
 
-https:///
+https://pc-constructor-7114a.web.app/
 
 ### `Home and review tab`
 
@@ -16,7 +16,7 @@ Login and Sign-Up form using firebase authentication
 
 Some Question and Answer is given in this tab using bootstrap modals.
 
-### `About tab`
+### `Portfolio tab`
 
 About Me.
 
@@ -26,3 +26,4 @@ About Me.
 #### Bootstrap CSS framework
 #### Firebase Authentication
 #### React
+#### react query
