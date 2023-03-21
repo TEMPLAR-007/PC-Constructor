@@ -5,7 +5,7 @@ const ShowReviews = () => {
     const [reviews, setreviews] = useState([]);
 
     useEffect(() => {
-        fetch('https://whispering-ocean-06351.herokuapp.com/reviews')
+        fetch('http://localhost:5000/reviews')
             .then(res => res.json())
             .then(data => setreviews(data))
     }, [])

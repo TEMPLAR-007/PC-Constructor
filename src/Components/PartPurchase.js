@@ -12,7 +12,7 @@ const PartPurchase = () => {
 
     const [btnDisable, setBtnDisable] = useState(false);
 
-    const { data: parts, isLoading } = useQuery('singlePart', () => fetch(`https://whispering-ocean-06351.herokuapp.com/part/${partId}`).then(res =>
+    const { data: parts, isLoading } = useQuery('singlePart', () => fetch(`http://localhost:5000/part/${partId}`).then(res =>
         res.json()
     ))
 
@@ -47,7 +47,7 @@ const PartPurchase = () => {
         };
 
 
-        fetch('https://whispering-ocean-06351.herokuapp.com/order', {
+        fetch('http://localhost:5000/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

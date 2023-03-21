@@ -11,7 +11,7 @@ const stripePromise = loadStripe('pk_test_51L3g8ZEcjGOXCJTTwdNctF1MWtzKXI0T0oEod
 const Payment = () => {
     const { id } = useParams();
 
-    const url = `https://whispering-ocean-06351.herokuapp.com/order/${id}`;
+    const url = `http://localhost:5000/order/${id}`;
 
     const { data: order, isLoading } = useQuery(['order', id], () => fetch(url).then(res => res.json()));
 

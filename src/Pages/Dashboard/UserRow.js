@@ -5,7 +5,7 @@ const UserRow = ({ user, refetch, index }) => {
     const { email, role } = user;
 
     const MakeAdmin = () => {
-        fetch(`https://whispering-ocean-06351.herokuapp.com/user/admin/${email}`, {
+        fetch(`http://localhost:5000/user/admin/${email}`, {
             method: 'PUT',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`
@@ -26,7 +26,7 @@ const UserRow = ({ user, refetch, index }) => {
     }
 
     const userDelete = (email) => {
-        fetch(`https://whispering-ocean-06351.herokuapp.com/api/admin/delete/${email}`, {
+        fetch(`http://localhost:5000/api/admin/delete/${email}`, {
             method: 'DELETE',
             headers: {
                 authorization: `Bearer ${localStorage.getItem('accessToken')}`

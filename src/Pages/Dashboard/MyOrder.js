@@ -17,7 +17,7 @@ const MyOrder = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`https://whispering-ocean-06351.herokuapp.com/api/order/${user?.email}`, {
+            fetch(`http://localhost:5000/api/order/${user?.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `Bearer ${localStorage.getItem('accessToken')}`
@@ -42,7 +42,7 @@ const MyOrder = () => {
 
     const handleRemove = id => {
         console.log(id);
-        const url = `https://whispering-ocean-06351.herokuapp.com/api/order/${id}`
+        const url = `http://localhost:5000/api/order/${id}`
         fetch(url, {
             method: 'DELETE'
         })
